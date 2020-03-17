@@ -367,6 +367,17 @@ footer #social-media-footer ul li:hover a .fa-github {
   color: #333;
 }
 
+.card-meta-blogspot {
+  color: #333;
+  font-size: 14px;
+  padding: 16px;
+  font-family: "Roboto Slab", sans-serif;
+}
+
+.card-meta-blogspot a {
+  color: #333;
+}
+
 /* Pagination */
 
 .pagination {
@@ -387,9 +398,45 @@ footer #social-media-footer ul li:hover a .fa-github {
   border-top: 3px solid black;
 }
 
+/*Single Blog Post*/
+#post-container {
+  display: flex;
+}
+#blogspot {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  border-left: 1px solid #999;
+}
+
+#blogspot .card {
+  width: 100%;
+}
+
+#blogspot .card-image:hover {
+  box-shadow: none;
+}
+
+/* Sidebar */
+
+#sidebar {
+  background: #333;
+  flex: 1;
+  padding: 8px 16px;
+  color: white;
+  box-shadow: inset 27px 0 51px -18px rgba(0, 0, 0, 0.75);
+}
+
+/* Comments Section */
+
+#comments-section {
+  border-top: 2px solid #eee;
+  padding: 8px;
+}
+
 /* Media Queries*/
 
-@media (max-width: 980px) {
+@media (max-width: 900px) {
   nav ul {
     display: none;
   }
@@ -403,6 +450,15 @@ footer #social-media-footer ul li:hover a .fa-github {
   }
 
   #searchbox {
+    display: none;
+  }
+
+  #blogpost {
+    width: 100%;
+    border-left: 0;
+  }
+
+  #sidebar {
     display: none;
   }
 }
